@@ -21,5 +21,9 @@ I'll be using this two techniques:
 
 2. **Adjusting the U-net segmentation model into classification.**
     I'll adjust the current U-net segmentation model such that it will not output the masks but only the binary classification(containing prostate - true, not containing prostate - false). This is how the adjusted model will look like:
+
+
+
+    
     ![](model1.png)
 
