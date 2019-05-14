@@ -44,7 +44,7 @@ for i in range(3):
 Each number of epochs were run 3 times and then averaged.
 
 |  Number of epochs |  Accuracy  |
-|---|---|---|
+|---|---|
 | 5  | 0.89  |   
  10  | 0.88  |  
 | 15  | 0.89   | 
@@ -61,7 +61,7 @@ As we can see the optimal number of epochs seems to be 20 with 0.90 accuracy.
 ## Training the reinforcement classification on different number of nodes in dense layers
 
 |  Number of nodes in dense layers |  Accuracy  |
-|---|---|---|
+|---|---|
 | 128 - 128 - 1  | 0.88  |   
 | 256 - 256 - 1  | 0.89  |   
 | 256 - 128 - 1  | 0.89  |   
@@ -75,7 +75,7 @@ The number of nodes in the dense layers doesn't seem to affect the accuracy much
 We added a dropout layer after the top_layer of the segmentation model. However it didn't improve the accuracy and with growing dropout rate the accuracy was decreasing.
 
 |  Dropout rate |  Accuracy  |
-|---|---|---|
+|---|---|
 | 0.2  | 0.88  |   
 | 0.6  | 0.88   |   
 | 0.8   | 0.81   |   
