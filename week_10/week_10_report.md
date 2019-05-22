@@ -27,3 +27,11 @@ Figure 1 - Histogram of probabilities of images that contains prostate( ground t
 
 Figure 2 - Histogram of probabilities of images that doesn't contain prostate( ground truth label == 0 )
 ![Histogram of probabilities of images that doesn't contain prostate( ground truth label == 0 )](prob-non-prostate-hist.png)
+
+### Training the transfer learning model without additional dense layers
+
+Accuracy: 0.898
+Loss: 0.332
+
+**Observation:**
+The metrics are the same whether the transfer learning classification model is trained with additional denser layers or not -- so they don't pick any additional insight into our data.
