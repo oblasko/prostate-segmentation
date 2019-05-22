@@ -39,7 +39,7 @@ for i in range(3):
 
         os.system(evaluate_command)
 ```
-## Training the reinforcement classification on different number of epochs
+## Training the transfer learning classification on different number of epochs
 
 Each number of epochs were run 3 times and then averaged.
 
@@ -58,7 +58,7 @@ Each number of epochs were run 3 times and then averaged.
 
 As we can see the optimal number of epochs seems to be 20 with 0.90 accuracy.
 
-## Training the reinforcement classification on different number of nodes in dense layers
+## Training the transfer learning classification on different number of nodes in dense layers
 
 |  Number of nodes in dense layers |  Accuracy  |
 |---|---|
@@ -70,7 +70,7 @@ As we can see the optimal number of epochs seems to be 20 with 0.90 accuracy.
 
 The number of nodes in the dense layers doesn't seem to affect the accuracy much, however the optimal number seems to be 256-128-1 respectively.
 
-## Training the reinforcement classification with a different dropout rates
+## Training the transfer learning classification with a different dropout rates
 
 We added a dropout layer after the top_layer of the segmentation model. However it didn't improve the accuracy and with growing dropout rate the accuracy was decreasing.
 
@@ -93,12 +93,12 @@ We tried appending the dense layers to a different convolutional layer of the se
 | 13th  |  0.90 |   
 | 14th  | 0.89  |   
 
-## The reinforcement classification model with optimal parameters
+## The transfer learning classification model with optimal parameters
 
 **Base classification model metrics**
 Accuracy: 0.891
 Loss: 0.386
 
-**Optimized reinforcement classification model**
+**Optimized transfer learning classification model**
 Accuracy: 0.891
 Loss: 0.378
